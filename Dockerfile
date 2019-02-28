@@ -8,4 +8,5 @@ RUN npm i -g @adonisjs/cli
 RUN npm i -g nodemon
 # Copy the current directory contents into the container at /app
 COPY . /app
-RUN yarn install --ignore-engines
+RUN yarn install --ignore-engines --silent
+CMD ["adonis", "serve"]
