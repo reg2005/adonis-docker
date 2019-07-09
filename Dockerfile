@@ -1,4 +1,4 @@
-FROM node:11.1.0-stretch
+FROM node:11-stretch
 
 # Set the working directory to /app
 WORKDIR /app
